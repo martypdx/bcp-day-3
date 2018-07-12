@@ -9,13 +9,17 @@
     <p>See console</p>
 
     <script>
-        console.log('hello world!');
+        var x = prompt('pick a number');
 
-        var x = 7;
-        var y = 12;
-        var sum = x + y;
-
-        console.log('The sum is:', sum);
+        if(x > 100) {
+            console.log('wow, that\'s a big number!')
+        }
+        else if(x % 2 === 0) {
+            console.log('x is even');
+        }
+        else {
+            console.log('x is odd');
+        }
 
     </script>
 </body>
