@@ -9,17 +9,31 @@
     <p>See console</p>
 
     <script>
-        var x = prompt('pick a number');
 
-        if(x > 100) {
-            console.log('wow, that\'s a big number!')
+        // CHALLENGE! 
+        // log even numbers up to 100
+        var x = 25; //prompt('pick a number');
+
+        // 1 - initialization
+        // 2 - condition
+        // 3 - post loop action (go back to 2)
+        
+        for(var i = 0; i < x; i++) {
+            if(i % 3 === 0 && i % 5 == 0) {
+                console.log('fizzbuzz');
+            }
+            else if(i % 3 === 0) {
+                console.log('fizz');
+            }
+            else if(i % 5 === 0) {
+                console.log('buzz');
+            }
+            else {
+                console.log(i);
+            }
         }
-        else if(x % 2 === 0) {
-            console.log('x is even');
-        }
-        else {
-            console.log('x is odd');
-        }
+    
+
 
     </script>
 </body>
