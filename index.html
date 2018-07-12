@@ -10,29 +10,14 @@
 
     <script>
 
-        // CHALLENGE! 
-        // log even numbers up to 100
-        var x = 25; //prompt('pick a number');
+        var promptValue = prompt('what is your name?');
 
-        // 1 - initialization
-        // 2 - condition
-        // 3 - post loop action (go back to 2)
-        
-        for(var i = 0; i < x; i++) {
-            if(i % 3 === 0 && i % 5 == 0) {
-                console.log('fizzbuzz');
-            }
-            else if(i % 3 === 0) {
-                console.log('fizz');
-            }
-            else if(i % 5 === 0) {
-                console.log('buzz');
-            }
-            else {
-                console.log(i);
-            }
-        }
-    
+        var confirmValue = confirm('is it safe?');
+
+        alert('danger!');
+
+        console.log('prompt', promptValue);
+        console.log('confirm', confirmValue);
 
 
     </script>
